@@ -9,4 +9,6 @@ project(dory-boost-adapter VERSION 1.85.0)
 add_library(boost-dll INTERFACE include/boost/dll.hpp)
 add_library(Boost::dll ALIAS boost-dll)
 
+target_compile_definitions(boost-dll INTERFACE BOOST_DLL_USE_STD_FS)
+
 target_include_directories(boost-dll INTERFACE include)

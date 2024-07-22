@@ -1,8 +1,8 @@
 #Minimized boost dependencies for dory project
 #The version of boost used is equal to the version of this project
 
-set(BUILD_TOOLS_REQUIRED_VERSION 3.18)
-cmake_minimum_required(VERSION ${BUILD_TOOLS_REQUIRED_VERSION})
+set(DORY_BUILD_TOOLS_REQUIRED_VERSION 3.18)
+cmake_minimum_required(VERSION ${DORY_BUILD_TOOLS_REQUIRED_VERSION})
 
 project(dory-boost-adapter VERSION 1.85.0)
 

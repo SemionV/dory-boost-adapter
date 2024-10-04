@@ -17,6 +17,6 @@ endif()
 add_library(${TARGET_PREFIX}boost-dll INTERFACE include/boost/dll.hpp)
 add_library(${TARGET_ALIAS_PREFIX}Boost::dll ALIAS boost-dll)
 
-target_compile_definitions(boost-dll INTERFACE BOOST_DLL_USE_STD_FS)
+target_compile_definitions(${TARGET_PREFIX}boost-dll INTERFACE BOOST_DLL_USE_STD_FS)
 
-target_include_directories(boost-dll INTERFACE include)
+target_include_directories(${TARGET_PREFIX}boost-dll INTERFACE include)

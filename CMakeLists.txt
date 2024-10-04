@@ -6,8 +6,6 @@ cmake_minimum_required(VERSION ${DORY_BUILD_TOOLS_REQUIRED_VERSION})
 
 project(dory-boost-adapter VERSION 1.85.0)
 
-option
-
 set(TARGET_PREFIX "")
 set(TARGET_ALIAS_PREFIX "")
 

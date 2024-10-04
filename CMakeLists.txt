@@ -18,7 +18,7 @@ if(DORY_DEPENDENCY_TARGET_ALIAS)
 endif()
 
 add_library(${TARGET_NAME} INTERFACE include/boost/dll.hpp)
-add_library(${TARGET_NAME} ALIAS ${TARGET_ALIAS})
+add_library(${TARGET_ALIAS} ALIAS ${TARGET_NAME})
 
 target_compile_definitions(${TARGET_NAME} INTERFACE BOOST_DLL_USE_STD_FS)
 
